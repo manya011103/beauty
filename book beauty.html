@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Indian Beauty Salon</title>
+    <link rel="stylesheet" href="book beauty.css">
+</head>
+<body>
+    <!-- Header Section -->
+
+    <header>
+        <div class=class1>
+            <h1>Indian Beauty Salon</h1>
+            <nav class=nav1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about beauty.html">About Us</a></li>
+                    <li><a href="contact beauty.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Book Now Section -->
+    <section class="book-now">
+        <div class="container">
+            <h2>Book Your Appointment</h2>
+            <p>Please fill out the form below to book your appointment with Indian Beauty Salon. We’ll confirm your appointment via email or phone shortly after your submission.</p>
+
+            <form action="submit_booking.php" method="post">
+                <!-- Personal Information -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- Service Selection -->
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select a Service --</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="facial">Facial</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="makeup">Makeup</option>
+                    <option value="spa">Spa</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Appointment Date and Time -->
+                <label for="date">Preferred Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <select id="time" name="time" required>
+                    <option value="">-- Select a Time --</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                </select>
+
+                <!-- Additional Notes -->
+                <label for="notes">Additional Notes (Optional):</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="cta-button">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Indian Beauty Salon. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy beauty.html">Privacy Policy</a></li>
+                <li><a href="terms beauty.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
